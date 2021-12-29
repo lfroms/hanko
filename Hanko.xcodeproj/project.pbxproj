@@ -7,16 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80230CAE277BF9660026E8E2 /* KeyDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */; };
+		80230CAF277BF9660026E8E2 /* KeyListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C8C277BF9650026E8E2 /* KeyListItem.swift */; };
+		80230CB1277BF9660026E8E2 /* NewKeySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C90277BF9650026E8E2 /* NewKeySheet.swift */; };
+		80230CB2277BF9660026E8E2 /* Collection+GroupedIntoSubSequences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C92277BF9650026E8E2 /* Collection+GroupedIntoSubSequences.swift */; };
+		80230CB3277BF9660026E8E2 /* String+RemovingRegexMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C93277BF9650026E8E2 /* String+RemovingRegexMatches.swift */; };
+		80230CB4277BF9660026E8E2 /* String+Substrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C94277BF9650026E8E2 /* String+Substrings.swift */; };
+		80230CB5277BF9660026E8E2 /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C95277BF9650026E8E2 /* String+Empty.swift */; };
+		80230CB6277BF9660026E8E2 /* String+FormattedIntoGroupsOfFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C96277BF9650026E8E2 /* String+FormattedIntoGroupsOfFour.swift */; };
+		80230CB7277BF9660026E8E2 /* KeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C98277BF9650026E8E2 /* KeyList.swift */; };
+		80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C99277BF9650026E8E2 /* Sidebar.swift */; };
+		80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9A277BF9650026E8E2 /* KeyDetails.swift */; };
+		80230CBA277BF9660026E8E2 /* KeyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */; };
+		80230CBB277BF9660026E8E2 /* NewKeySheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */; };
+		80230CBC277BF9660026E8E2 /* KeyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */; };
+		80230CBD277BF9660026E8E2 /* Validity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA0277BF9650026E8E2 /* Validity.swift */; };
+		80230CBE277BF9660026E8E2 /* GPGTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA1277BF9650026E8E2 /* GPGTask.swift */; };
+		80230CBF277BF9660026E8E2 /* RecordPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA2277BF9650026E8E2 /* RecordPayload.swift */; };
+		80230CC0277BF9660026E8E2 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA3277BF9650026E8E2 /* Algorithm.swift */; };
+		80230CC1277BF9660026E8E2 /* RecordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA4277BF9650026E8E2 /* RecordType.swift */; };
+		80230CC2277BF9660026E8E2 /* Capabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA5277BF9650026E8E2 /* Capabilities.swift */; };
+		80230CC3277BF9660026E8E2 /* NestableRecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA6277BF9650026E8E2 /* NestableRecordSet.swift */; };
+		80230CC4277BF9660026E8E2 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA7277BF9650026E8E2 /* UserID.swift */; };
+		80230CC5277BF9660026E8E2 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA8277BF9650026E8E2 /* Key.swift */; };
+		80230CC6277BF9660026E8E2 /* PrimaryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA9277BF9650026E8E2 /* PrimaryKey.swift */; };
+		80230CC7277BF9660026E8E2 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAA277BF9650026E8E2 /* Record.swift */; };
+		80230CC8277BF9660026E8E2 /* RecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAB277BF9650026E8E2 /* RecordSet.swift */; };
+		80230CC9277BF9660026E8E2 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAD277BF9660026E8E2 /* Shell.swift */; };
+		80230CCD277C0CAE0026E8E2 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */; };
+		80230CCF277C112D0026E8E2 /* NewKeyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCE277C112D0026E8E2 /* NewKeyOperation.swift */; };
 		8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D2C4277BF8E80073C812 /* HankoApp.swift */; };
-		8058D2C7277BF8E80073C812 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D2C6277BF8E80073C812 /* ContentView.swift */; };
 		8058D2C9277BF8E90073C812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8058D2C8277BF8E90073C812 /* Assets.xcassets */; };
 		8058D2CC277BF8E90073C812 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8058D2CB277BF8E90073C812 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetailsRow.swift; sourceTree = "<group>"; };
+		80230C8C277BF9650026E8E2 /* KeyListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyListItem.swift; sourceTree = "<group>"; };
+		80230C90277BF9650026E8E2 /* NewKeySheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewKeySheet.swift; sourceTree = "<group>"; };
+		80230C92277BF9650026E8E2 /* Collection+GroupedIntoSubSequences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+GroupedIntoSubSequences.swift"; sourceTree = "<group>"; };
+		80230C93277BF9650026E8E2 /* String+RemovingRegexMatches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RemovingRegexMatches.swift"; sourceTree = "<group>"; };
+		80230C94277BF9650026E8E2 /* String+Substrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substrings.swift"; sourceTree = "<group>"; };
+		80230C95277BF9650026E8E2 /* String+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
+		80230C96277BF9650026E8E2 /* String+FormattedIntoGroupsOfFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FormattedIntoGroupsOfFour.swift"; sourceTree = "<group>"; };
+		80230C98277BF9650026E8E2 /* KeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyList.swift; sourceTree = "<group>"; };
+		80230C99277BF9650026E8E2 /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		80230C9A277BF9650026E8E2 /* KeyDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetails.swift; sourceTree = "<group>"; };
+		80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetailsViewModel.swift; sourceTree = "<group>"; };
+		80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewKeySheetViewModel.swift; sourceTree = "<group>"; };
+		80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyListViewModel.swift; sourceTree = "<group>"; };
+		80230CA0277BF9650026E8E2 /* Validity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validity.swift; sourceTree = "<group>"; };
+		80230CA1277BF9650026E8E2 /* GPGTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPGTask.swift; sourceTree = "<group>"; };
+		80230CA2277BF9650026E8E2 /* RecordPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordPayload.swift; sourceTree = "<group>"; };
+		80230CA3277BF9650026E8E2 /* Algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
+		80230CA4277BF9650026E8E2 /* RecordType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordType.swift; sourceTree = "<group>"; };
+		80230CA5277BF9650026E8E2 /* Capabilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capabilities.swift; sourceTree = "<group>"; };
+		80230CA6277BF9650026E8E2 /* NestableRecordSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestableRecordSet.swift; sourceTree = "<group>"; };
+		80230CA7277BF9650026E8E2 /* UserID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
+		80230CA8277BF9650026E8E2 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		80230CA9277BF9650026E8E2 /* PrimaryKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryKey.swift; sourceTree = "<group>"; };
+		80230CAA277BF9650026E8E2 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		80230CAB277BF9650026E8E2 /* RecordSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSet.swift; sourceTree = "<group>"; };
+		80230CAD277BF9660026E8E2 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
+		80230CCE277C112D0026E8E2 /* NewKeyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewKeyOperation.swift; sourceTree = "<group>"; };
 		8058D2C1277BF8E80073C812 /* Hanko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hanko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8058D2C4277BF8E80073C812 /* HankoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankoApp.swift; sourceTree = "<group>"; };
-		8058D2C6277BF8E80073C812 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8058D2C8277BF8E90073C812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8058D2CB277BF8E90073C812 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8058D2CD277BF8E90073C812 /* Hanko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hanko.entitlements; sourceTree = "<group>"; };
@@ -33,6 +89,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80230C8A277BF9650026E8E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */,
+				80230C8C277BF9650026E8E2 /* KeyListItem.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80230C8F277BF9650026E8E2 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				80230C90277BF9650026E8E2 /* NewKeySheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		80230C91277BF9650026E8E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80230C92277BF9650026E8E2 /* Collection+GroupedIntoSubSequences.swift */,
+				80230C93277BF9650026E8E2 /* String+RemovingRegexMatches.swift */,
+				80230C94277BF9650026E8E2 /* String+Substrings.swift */,
+				80230C95277BF9650026E8E2 /* String+Empty.swift */,
+				80230C96277BF9650026E8E2 /* String+FormattedIntoGroupsOfFour.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80230C97277BF9650026E8E2 /* Panes */ = {
+			isa = PBXGroup;
+			children = (
+				80230C99277BF9650026E8E2 /* Sidebar.swift */,
+				80230C98277BF9650026E8E2 /* KeyList.swift */,
+				80230C9A277BF9650026E8E2 /* KeyDetails.swift */,
+			);
+			path = Panes;
+			sourceTree = "<group>";
+		};
+		80230C9B277BF9650026E8E2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */,
+				80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */,
+				80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */,
+				80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		80230C9F277BF9650026E8E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80230CA0277BF9650026E8E2 /* Validity.swift */,
+				80230CA1277BF9650026E8E2 /* GPGTask.swift */,
+				80230CA2277BF9650026E8E2 /* RecordPayload.swift */,
+				80230CA3277BF9650026E8E2 /* Algorithm.swift */,
+				80230CA4277BF9650026E8E2 /* RecordType.swift */,
+				80230CA5277BF9650026E8E2 /* Capabilities.swift */,
+				80230CA6277BF9650026E8E2 /* NestableRecordSet.swift */,
+				80230CA7277BF9650026E8E2 /* UserID.swift */,
+				80230CA8277BF9650026E8E2 /* Key.swift */,
+				80230CA9277BF9650026E8E2 /* PrimaryKey.swift */,
+				80230CAA277BF9650026E8E2 /* Record.swift */,
+				80230CAB277BF9650026E8E2 /* RecordSet.swift */,
+				80230CCE277C112D0026E8E2 /* NewKeyOperation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80230CAC277BF9660026E8E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				80230CAD277BF9660026E8E2 /* Shell.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8058D2B8277BF8E80073C812 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +186,14 @@
 		8058D2C3277BF8E80073C812 /* Hanko */ = {
 			isa = PBXGroup;
 			children = (
+				80230C91277BF9650026E8E2 /* Extensions */,
+				80230C9F277BF9650026E8E2 /* Models */,
+				80230C97277BF9650026E8E2 /* Panes */,
+				80230C8F277BF9650026E8E2 /* Sheets */,
+				80230CAC277BF9660026E8E2 /* Utilities */,
+				80230C9B277BF9650026E8E2 /* ViewModels */,
+				80230C8A277BF9650026E8E2 /* Views */,
 				8058D2C4277BF8E80073C812 /* HankoApp.swift */,
-				8058D2C6277BF8E80073C812 /* ContentView.swift */,
 				8058D2C8277BF8E90073C812 /* Assets.xcassets */,
 				8058D2CD277BF8E90073C812 /* Hanko.entitlements */,
 				8058D2CA277BF8E90073C812 /* Preview Content */,
@@ -139,8 +279,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8058D2C7277BF8E80073C812 /* ContentView.swift in Sources */,
+				80230CC2277BF9660026E8E2 /* Capabilities.swift in Sources */,
+				80230CB6277BF9660026E8E2 /* String+FormattedIntoGroupsOfFour.swift in Sources */,
+				80230CC0277BF9660026E8E2 /* Algorithm.swift in Sources */,
+				80230CB7277BF9660026E8E2 /* KeyList.swift in Sources */,
+				80230CB4277BF9660026E8E2 /* String+Substrings.swift in Sources */,
+				80230CC5277BF9660026E8E2 /* Key.swift in Sources */,
+				80230CBB277BF9660026E8E2 /* NewKeySheetViewModel.swift in Sources */,
+				80230CB1277BF9660026E8E2 /* NewKeySheet.swift in Sources */,
+				80230CB3277BF9660026E8E2 /* String+RemovingRegexMatches.swift in Sources */,
 				8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */,
+				80230CBC277BF9660026E8E2 /* KeyListViewModel.swift in Sources */,
+				80230CC8277BF9660026E8E2 /* RecordSet.swift in Sources */,
+				80230CBA277BF9660026E8E2 /* KeyDetailsViewModel.swift in Sources */,
+				80230CC3277BF9660026E8E2 /* NestableRecordSet.swift in Sources */,
+				80230CAF277BF9660026E8E2 /* KeyListItem.swift in Sources */,
+				80230CBE277BF9660026E8E2 /* GPGTask.swift in Sources */,
+				80230CAE277BF9660026E8E2 /* KeyDetailsRow.swift in Sources */,
+				80230CCF277C112D0026E8E2 /* NewKeyOperation.swift in Sources */,
+				80230CC6277BF9660026E8E2 /* PrimaryKey.swift in Sources */,
+				80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */,
+				80230CC4277BF9660026E8E2 /* UserID.swift in Sources */,
+				80230CB5277BF9660026E8E2 /* String+Empty.swift in Sources */,
+				80230CC7277BF9660026E8E2 /* Record.swift in Sources */,
+				80230CC9277BF9660026E8E2 /* Shell.swift in Sources */,
+				80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */,
+				80230CCD277C0CAE0026E8E2 /* SidebarViewModel.swift in Sources */,
+				80230CC1277BF9660026E8E2 /* RecordType.swift in Sources */,
+				80230CBF277BF9660026E8E2 /* RecordPayload.swift in Sources */,
+				80230CB2277BF9660026E8E2 /* Collection+GroupedIntoSubSequences.swift in Sources */,
+				80230CBD277BF9660026E8E2 /* Validity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
