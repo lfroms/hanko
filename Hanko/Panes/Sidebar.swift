@@ -20,11 +20,11 @@ struct Sidebar: View {
         List {
             NavigationLink(
                 destination: KeyList(items: viewModel.allKeys)
-                    .navigationTitle("All Keys"),
+                    .navigationTitle("Public Keys"),
                 tag: AppSection.allKeys,
                 selection: $viewModel.currentSection
             ) {
-                Label("All Keys", systemImage: "key.fill")
+                Label("Public Keys", systemImage: "key.fill")
             }
 
             NavigationLink(
@@ -39,9 +39,13 @@ struct Sidebar: View {
         .listStyle(SidebarListStyle())
         .listItemTint(.red)
         .frame(minWidth: 220)
-        .onAppear(perform: viewModel.loadKeys)
-        .onReceive(NotificationCenter.default.publisher(for: .onUpdateKeys)) { _ in
+        .task {
             viewModel.loadKeys()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .onUpdateKeys)) { _ in
+            Task {
+                viewModel.loadKeys()
+            }
         }
     }
 }

@@ -5,6 +5,7 @@
 //  Created by Lukas Romsicki on 2021-12-26.
 //
 
+import GPGKit
 import SwiftUI
 
 enum KeyListScope {
@@ -15,10 +16,10 @@ enum KeyListScope {
 struct KeyList: View {
     @ObservedObject private var viewModel = KeyListViewModel()
 
-    var items: [PrimaryKey]
+    var items: [Key]
 
     var body: some View {
-        List(items, id: \.id) { key in
+        List(items, id: \.fingerprint) { key in
             NavigationLink(
                 destination: KeyDetails(key: key, didDelete: {
                     viewModel.delete(key: key)

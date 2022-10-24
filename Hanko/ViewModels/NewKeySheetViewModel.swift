@@ -7,24 +7,24 @@
 
 import Combine
 import Foundation
+import GPGKit
 
 class NewKeySheetViewModel: ObservableObject {
     @Published var name: String = ""
 
     func createKey() {
-        let task = GPGTask(arguments: ["--batch", "--gen-key"])
+        let context = GPGContext(protocol: .openPGP, armor: true, offline: true)
 
-        let newKeyOperation = NewKeyOperation(
-            keyType: "default",
-            subkeyType: "default",
-            name: name,
-            comment: "test key",
-            email: "joe@foo.bar",
-            expirationDate: "0",
-            askPassphrase: true
-        )
+        context.createKey(userId: name, algorithm: "RSA", expiresOn: Date().addingTimeInterval(10000), flags: [.sign, .certify])
 
-        _ = task.run(standardInput: newKeyOperation.stringRepresentation)
+//        let key = context.keys(matching: name).first!
+
+//        context.createSubkey(key: key, algorithm: "RSA", expiresOn: .distantFuture, flags: [.authenticate])
+//
+//        context.addUserId(key: key, userId: "Test Person <test@romsicki.com>")
+//        context.setUserIdFlag(key: key, userId: "Test Person <test@romsicki.com>", named: "email", withValue: "hello@me.com")
+
+        print(context.keys(matching: name))
 
         NotificationCenter.default.post(name: .onUpdateKeys, object: nil)
     }

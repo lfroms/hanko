@@ -6,11 +6,19 @@
 //
 
 import Foundation
+import GPGKit
 import SwiftUI
 
 @main
 struct HankoApp: App {
     @State var loading = false
+
+    init() {
+        setenv("PATH", "/opt/homebrew/bin", 1)
+
+        let engine = GPGEngine()
+        engine.checkVersion()
+    }
 
     var body: some Scene {
         WindowGroup {

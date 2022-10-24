@@ -7,9 +7,10 @@
 
 import Combine
 import Foundation
+import GPGKit
 
 class KeyListViewModel: ObservableObject {
-    @Published var selectedKey: PrimaryKey?
+    @Published var selectedKey: Key?
 
     @Published var newKeySheetVisible: Bool = false
 
@@ -17,9 +18,9 @@ class KeyListViewModel: ObservableObject {
         newKeySheetVisible = true
     }
 
-    func delete(key: PrimaryKey) {
-        let task = GPGTask(arguments: ["--delete-secret-and-public-key", "--batch", key.fingerprint])
-        _ = task.run()
+    func delete(key: Key) {
+        let context = GPGContext()
+        context.deleteKey(key: key, allowSecret: true)
 
         NotificationCenter.default.post(name: .onUpdateKeys, object: nil)
     }

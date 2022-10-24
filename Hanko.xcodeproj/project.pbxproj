@@ -21,24 +21,16 @@
 		80230CBA277BF9660026E8E2 /* KeyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */; };
 		80230CBB277BF9660026E8E2 /* NewKeySheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */; };
 		80230CBC277BF9660026E8E2 /* KeyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */; };
-		80230CBD277BF9660026E8E2 /* Validity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA0277BF9650026E8E2 /* Validity.swift */; };
-		80230CBE277BF9660026E8E2 /* GPGTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA1277BF9650026E8E2 /* GPGTask.swift */; };
-		80230CBF277BF9660026E8E2 /* RecordPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA2277BF9650026E8E2 /* RecordPayload.swift */; };
-		80230CC0277BF9660026E8E2 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA3277BF9650026E8E2 /* Algorithm.swift */; };
-		80230CC1277BF9660026E8E2 /* RecordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA4277BF9650026E8E2 /* RecordType.swift */; };
-		80230CC2277BF9660026E8E2 /* Capabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA5277BF9650026E8E2 /* Capabilities.swift */; };
-		80230CC3277BF9660026E8E2 /* NestableRecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA6277BF9650026E8E2 /* NestableRecordSet.swift */; };
-		80230CC4277BF9660026E8E2 /* UserID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA7277BF9650026E8E2 /* UserID.swift */; };
-		80230CC5277BF9660026E8E2 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA8277BF9650026E8E2 /* Key.swift */; };
-		80230CC6277BF9660026E8E2 /* PrimaryKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CA9277BF9650026E8E2 /* PrimaryKey.swift */; };
-		80230CC7277BF9660026E8E2 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAA277BF9650026E8E2 /* Record.swift */; };
-		80230CC8277BF9660026E8E2 /* RecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAB277BF9650026E8E2 /* RecordSet.swift */; };
 		80230CC9277BF9660026E8E2 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAD277BF9660026E8E2 /* Shell.swift */; };
 		80230CCD277C0CAE0026E8E2 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */; };
-		80230CCF277C112D0026E8E2 /* NewKeyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCE277C112D0026E8E2 /* NewKeyOperation.swift */; };
+		804D1553290615B1006065F8 /* Key+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D1552290615B1006065F8 /* Key+Hashable.swift */; };
+		804D155529061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */; };
+		804D155729061674006065F8 /* Validity+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155629061674006065F8 /* Validity+CustomStringConvertible.swift */; };
+		804D155C290616A3006065F8 /* KeyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155B290616A3006065F8 /* KeyProperty.swift */; };
+		804D155E290616B7006065F8 /* Key+FormattedProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155D290616B7006065F8 /* Key+FormattedProperties.swift */; };
 		8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D2C4277BF8E80073C812 /* HankoApp.swift */; };
 		8058D2C9277BF8E90073C812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8058D2C8277BF8E90073C812 /* Assets.xcassets */; };
-		8058D2CC277BF8E90073C812 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8058D2CB277BF8E90073C812 /* Preview Assets.xcassets */; };
+		807738A52904C4F700763C3C /* GPGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 807738A42904C4F700763C3C /* GPGKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,25 +48,17 @@
 		80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetailsViewModel.swift; sourceTree = "<group>"; };
 		80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewKeySheetViewModel.swift; sourceTree = "<group>"; };
 		80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyListViewModel.swift; sourceTree = "<group>"; };
-		80230CA0277BF9650026E8E2 /* Validity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validity.swift; sourceTree = "<group>"; };
-		80230CA1277BF9650026E8E2 /* GPGTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPGTask.swift; sourceTree = "<group>"; };
-		80230CA2277BF9650026E8E2 /* RecordPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordPayload.swift; sourceTree = "<group>"; };
-		80230CA3277BF9650026E8E2 /* Algorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Algorithm.swift; sourceTree = "<group>"; };
-		80230CA4277BF9650026E8E2 /* RecordType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordType.swift; sourceTree = "<group>"; };
-		80230CA5277BF9650026E8E2 /* Capabilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capabilities.swift; sourceTree = "<group>"; };
-		80230CA6277BF9650026E8E2 /* NestableRecordSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestableRecordSet.swift; sourceTree = "<group>"; };
-		80230CA7277BF9650026E8E2 /* UserID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserID.swift; sourceTree = "<group>"; };
-		80230CA8277BF9650026E8E2 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
-		80230CA9277BF9650026E8E2 /* PrimaryKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryKey.swift; sourceTree = "<group>"; };
-		80230CAA277BF9650026E8E2 /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
-		80230CAB277BF9650026E8E2 /* RecordSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordSet.swift; sourceTree = "<group>"; };
 		80230CAD277BF9660026E8E2 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
-		80230CCE277C112D0026E8E2 /* NewKeyOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewKeyOperation.swift; sourceTree = "<group>"; };
+		8026B9262904BA7100E1E2A7 /* HankoModules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HankoModules; sourceTree = "<group>"; };
+		804D1552290615B1006065F8 /* Key+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Key+Hashable.swift"; sourceTree = "<group>"; };
+		804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyAlgorithm+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		804D155629061674006065F8 /* Validity+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validity+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		804D155B290616A3006065F8 /* KeyProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyProperty.swift; sourceTree = "<group>"; };
+		804D155D290616B7006065F8 /* Key+FormattedProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Key+FormattedProperties.swift"; sourceTree = "<group>"; };
 		8058D2C1277BF8E80073C812 /* Hanko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hanko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8058D2C4277BF8E80073C812 /* HankoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankoApp.swift; sourceTree = "<group>"; };
 		8058D2C8277BF8E90073C812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8058D2CB277BF8E90073C812 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8058D2CD277BF8E90073C812 /* Hanko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hanko.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807738A52904C4F700763C3C /* GPGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +95,14 @@
 			isa = PBXGroup;
 			children = (
 				80230C92277BF9650026E8E2 /* Collection+GroupedIntoSubSequences.swift */,
-				80230C93277BF9650026E8E2 /* String+RemovingRegexMatches.swift */,
-				80230C94277BF9650026E8E2 /* String+Substrings.swift */,
+				804D155D290616B7006065F8 /* Key+FormattedProperties.swift */,
+				804D1552290615B1006065F8 /* Key+Hashable.swift */,
+				804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */,
 				80230C95277BF9650026E8E2 /* String+Empty.swift */,
 				80230C96277BF9650026E8E2 /* String+FormattedIntoGroupsOfFour.swift */,
+				80230C93277BF9650026E8E2 /* String+RemovingRegexMatches.swift */,
+				80230C94277BF9650026E8E2 /* String+Substrings.swift */,
+				804D155629061674006065F8 /* Validity+CustomStringConvertible.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,26 +128,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		80230C9F277BF9650026E8E2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				80230CA0277BF9650026E8E2 /* Validity.swift */,
-				80230CA1277BF9650026E8E2 /* GPGTask.swift */,
-				80230CA2277BF9650026E8E2 /* RecordPayload.swift */,
-				80230CA3277BF9650026E8E2 /* Algorithm.swift */,
-				80230CA4277BF9650026E8E2 /* RecordType.swift */,
-				80230CA5277BF9650026E8E2 /* Capabilities.swift */,
-				80230CA6277BF9650026E8E2 /* NestableRecordSet.swift */,
-				80230CA7277BF9650026E8E2 /* UserID.swift */,
-				80230CA8277BF9650026E8E2 /* Key.swift */,
-				80230CA9277BF9650026E8E2 /* PrimaryKey.swift */,
-				80230CAA277BF9650026E8E2 /* Record.swift */,
-				80230CAB277BF9650026E8E2 /* RecordSet.swift */,
-				80230CCE277C112D0026E8E2 /* NewKeyOperation.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		80230CAC277BF9660026E8E2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,10 +136,19 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		804D155829061693006065F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				804D155B290616A3006065F8 /* KeyProperty.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8058D2B8277BF8E80073C812 = {
 			isa = PBXGroup;
 			children = (
 				8058D2C3277BF8E80073C812 /* Hanko */,
+				8026B9262904BA7100E1E2A7 /* HankoModules */,
 				8058D2C2277BF8E80073C812 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,26 +165,17 @@
 			isa = PBXGroup;
 			children = (
 				80230C91277BF9650026E8E2 /* Extensions */,
-				80230C9F277BF9650026E8E2 /* Models */,
+				804D155829061693006065F8 /* Models */,
 				80230C97277BF9650026E8E2 /* Panes */,
 				80230C8F277BF9650026E8E2 /* Sheets */,
 				80230CAC277BF9660026E8E2 /* Utilities */,
 				80230C9B277BF9650026E8E2 /* ViewModels */,
 				80230C8A277BF9650026E8E2 /* Views */,
-				8058D2C4277BF8E80073C812 /* HankoApp.swift */,
 				8058D2C8277BF8E90073C812 /* Assets.xcassets */,
 				8058D2CD277BF8E90073C812 /* Hanko.entitlements */,
-				8058D2CA277BF8E90073C812 /* Preview Content */,
+				8058D2C4277BF8E80073C812 /* HankoApp.swift */,
 			);
 			path = Hanko;
-			sourceTree = "<group>";
-		};
-		8058D2CA277BF8E90073C812 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				8058D2CB277BF8E90073C812 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +194,9 @@
 			dependencies = (
 			);
 			name = Hanko;
+			packageProductDependencies = (
+				807738A42904C4F700763C3C /* GPGKit */,
+			);
 			productName = Hanko;
 			productReference = 8058D2C1277BF8E80073C812 /* Hanko.app */;
 			productType = "com.apple.product-type.application";
@@ -237,7 +209,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					8058D2C0277BF8E80073C812 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -267,7 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8058D2CC277BF8E90073C812 /* Preview Assets.xcassets in Resources */,
 				8058D2C9277BF8E90073C812 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,36 +250,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80230CC2277BF9660026E8E2 /* Capabilities.swift in Sources */,
 				80230CB6277BF9660026E8E2 /* String+FormattedIntoGroupsOfFour.swift in Sources */,
-				80230CC0277BF9660026E8E2 /* Algorithm.swift in Sources */,
 				80230CB7277BF9660026E8E2 /* KeyList.swift in Sources */,
 				80230CB4277BF9660026E8E2 /* String+Substrings.swift in Sources */,
-				80230CC5277BF9660026E8E2 /* Key.swift in Sources */,
 				80230CBB277BF9660026E8E2 /* NewKeySheetViewModel.swift in Sources */,
 				80230CB1277BF9660026E8E2 /* NewKeySheet.swift in Sources */,
+				804D155729061674006065F8 /* Validity+CustomStringConvertible.swift in Sources */,
+				804D1553290615B1006065F8 /* Key+Hashable.swift in Sources */,
 				80230CB3277BF9660026E8E2 /* String+RemovingRegexMatches.swift in Sources */,
 				8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */,
 				80230CBC277BF9660026E8E2 /* KeyListViewModel.swift in Sources */,
-				80230CC8277BF9660026E8E2 /* RecordSet.swift in Sources */,
 				80230CBA277BF9660026E8E2 /* KeyDetailsViewModel.swift in Sources */,
-				80230CC3277BF9660026E8E2 /* NestableRecordSet.swift in Sources */,
+				804D155E290616B7006065F8 /* Key+FormattedProperties.swift in Sources */,
 				80230CAF277BF9660026E8E2 /* KeyListItem.swift in Sources */,
-				80230CBE277BF9660026E8E2 /* GPGTask.swift in Sources */,
 				80230CAE277BF9660026E8E2 /* KeyDetailsRow.swift in Sources */,
-				80230CCF277C112D0026E8E2 /* NewKeyOperation.swift in Sources */,
-				80230CC6277BF9660026E8E2 /* PrimaryKey.swift in Sources */,
+				804D155529061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift in Sources */,
 				80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */,
-				80230CC4277BF9660026E8E2 /* UserID.swift in Sources */,
 				80230CB5277BF9660026E8E2 /* String+Empty.swift in Sources */,
-				80230CC7277BF9660026E8E2 /* Record.swift in Sources */,
 				80230CC9277BF9660026E8E2 /* Shell.swift in Sources */,
 				80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */,
 				80230CCD277C0CAE0026E8E2 /* SidebarViewModel.swift in Sources */,
-				80230CC1277BF9660026E8E2 /* RecordType.swift in Sources */,
-				80230CBF277BF9660026E8E2 /* RecordPayload.swift in Sources */,
 				80230CB2277BF9660026E8E2 /* Collection+GroupedIntoSubSequences.swift in Sources */,
-				80230CBD277BF9660026E8E2 /* Validity.swift in Sources */,
+				804D155C290616A3006065F8 /* KeyProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +312,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -410,6 +374,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -436,10 +401,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Hanko/Hanko.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Hanko/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 8P8574Z65P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -463,10 +430,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Hanko/Hanko.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Hanko/Preview Content\"";
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 8P8574Z65P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -506,6 +475,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		807738A42904C4F700763C3C /* GPGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GPGKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8058D2B9277BF8E80073C812 /* Project object */;
 }

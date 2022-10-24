@@ -5,10 +5,11 @@
 //  Created by Lukas Romsicki on 2021-12-26.
 //
 
+import GPGKit
 import SwiftUI
 
 struct KeyDetails: View {
-    let key: PrimaryKey
+    let key: Key
     let didDelete: () -> Void
 
     @ObservedObject private var viewModel = KeyDetailsViewModel()
@@ -22,20 +23,20 @@ struct KeyDetails: View {
                             .foregroundColor(.gray)
                             .frame(width: 96, height: 96)
 
-                        Text(key.primaryUserId.name)
+                        Text(key.uids.first?.name ?? "")
                             .font(.title)
                             .fontWeight(.bold)
                     }
 
-                    if !key.primaryUserId.email.isEmpty {
-                        Text(key.primaryUserId.email)
+                    if !(key.uids.first?.name.isEmpty ?? false) {
+                        Text(key.uids.first?.email ?? "")
                             .font(.headline)
                             .fontWeight(.medium)
                             .foregroundColor(.secondary)
                     }
 
-                    if !key.primaryUserId.comment.isEmpty {
-                        Text(key.primaryUserId.comment)
+                    if !(key.uids.first?.comment.isEmpty ?? false) {
+                        Text(key.uids.first?.comment ?? "")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .padding(.top, 8)
@@ -79,7 +80,7 @@ struct KeyDetails: View {
                 .help("Export this key")
             }
         }
-        .navigationTitle(key.primaryUserId.name)
+        .navigationTitle(key.uids.first?.name ?? "")
     }
 
     struct Placeholder: View {

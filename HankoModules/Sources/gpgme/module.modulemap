@@ -1,0 +1,4 @@
+module gpgme {
+    umbrella header "gpgkit_gpgme.h"
+    link "gpgme"
+}

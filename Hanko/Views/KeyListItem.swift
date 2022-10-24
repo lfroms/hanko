@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GPGKit
 
 struct KeyListItem: View {
     let key: Key
@@ -18,10 +19,10 @@ struct KeyListItem: View {
 
             VStack(alignment: .leading, spacing: 4) {
                 HStack(alignment: .firstTextBaseline, spacing: 6) {
-                    Text(key.primaryUserId.name)
+                    Text(key.uids.first?.name ?? "")
                         .font(.headline)
 
-                    Text(key.primaryUserId.email)
+                    Text(key.uids.first?.email ?? "")
                         .font(.headline)
                         .fontWeight(.medium)
                         .foregroundColor(.secondary)
@@ -45,7 +46,7 @@ struct KeyListItem: View {
                 .help("Public Key")
 
             // TODO: Confirm this logic.
-            if [.ultimate, .full, .marginal].contains(key.validity) {
+            if [.ultimate, .full, .marginal].contains(key.ownerTrust) {
                 Image(systemName: "checkmark.seal.fill")
                     .foregroundColor(.green)
                     .help("Valid")

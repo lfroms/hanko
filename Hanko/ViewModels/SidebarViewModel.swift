@@ -7,6 +7,7 @@
 
 import Combine
 import Foundation
+import GPGKit
 
 enum AppSection: Equatable {
     case allKeys
@@ -16,41 +17,12 @@ enum AppSection: Equatable {
 class SidebarViewModel: ObservableObject {
     @Published var currentSection: AppSection? = .allKeys
 
-    @Published var allKeys: [PrimaryKey] = []
-    @Published var secretKeys: [PrimaryKey] = []
+    @Published var allKeys: [Key] = []
+    @Published var secretKeys: [Key] = []
 
     func loadKeys() {
-        let secretKeys = retrieveSecretKeys()
-        let allKeys = retrieveAllKeys(secretKeys: secretKeys)
-
-        self.secretKeys = secretKeys
-        self.allKeys = allKeys
-    }
-
-    private func retrieveAllKeys(secretKeys: [PrimaryKey]) -> [PrimaryKey] {
-        let task = GPGTask(arguments: ["--list-keys", "--with-colons"])
-        let taskResult = task.run()
-        let recordPayload = RecordPayload(from: taskResult.output)
-
-        let allKeys = recordPayload
-            .recordSet
-            .recordSets(of: [.publicKey])
-            .compactMap { try? PrimaryKey(from: $0) }
-
-        return allKeys.map { key in
-            secretKeys.first { $0.fingerprint == key.fingerprint } ?? key
-        }
-    }
-
-    private func retrieveSecretKeys() -> [PrimaryKey] {
-        let task = GPGTask(arguments: ["--list-secret-keys", "--with-colons"])
-
-        let taskResult = task.run()
-        let recordPayload = RecordPayload(from: taskResult.output)
-
-        return recordPayload
-            .recordSet
-            .recordSets(of: [.secretKey])
-            .compactMap { try? PrimaryKey(from: $0) }
+        let context = GPGContext()
+        self.allKeys = context.keys(secret: false)
+        self.secretKeys = context.keys(secret: true)
     }
 }
