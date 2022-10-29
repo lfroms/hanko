@@ -18,11 +18,7 @@
 		80230CB7277BF9660026E8E2 /* KeyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C98277BF9650026E8E2 /* KeyList.swift */; };
 		80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C99277BF9650026E8E2 /* Sidebar.swift */; };
 		80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9A277BF9650026E8E2 /* KeyDetails.swift */; };
-		80230CBA277BF9660026E8E2 /* KeyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */; };
-		80230CBB277BF9660026E8E2 /* NewKeySheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */; };
-		80230CBC277BF9660026E8E2 /* KeyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */; };
 		80230CC9277BF9660026E8E2 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAD277BF9660026E8E2 /* Shell.swift */; };
-		80230CCD277C0CAE0026E8E2 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */; };
 		804D1553290615B1006065F8 /* Key+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D1552290615B1006065F8 /* Key+Hashable.swift */; };
 		804D155529061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */; };
 		804D155729061674006065F8 /* Validity+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155629061674006065F8 /* Validity+CustomStringConvertible.swift */; };
@@ -31,6 +27,10 @@
 		8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8058D2C4277BF8E80073C812 /* HankoApp.swift */; };
 		8058D2C9277BF8E90073C812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8058D2C8277BF8E90073C812 /* Assets.xcassets */; };
 		807738A52904C4F700763C3C /* GPGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 807738A42904C4F700763C3C /* GPGKit */; };
+		8099E8DC290D9C0F003C8524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8DB290D9C0F003C8524 /* ContentView.swift */; };
+		8099E8E3290DBE84003C8524 /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8E2290DBE84003C8524 /* AppSection.swift */; };
+		8099E8E5290DBF80003C8524 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8E4290DBF80003C8524 /* KeyStore.swift */; };
+		8099E8E7290DC311003C8524 /* KeyListScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8E6290DC311003C8524 /* KeyListScope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,11 +45,7 @@
 		80230C98277BF9650026E8E2 /* KeyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyList.swift; sourceTree = "<group>"; };
 		80230C99277BF9650026E8E2 /* Sidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		80230C9A277BF9650026E8E2 /* KeyDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetails.swift; sourceTree = "<group>"; };
-		80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetailsViewModel.swift; sourceTree = "<group>"; };
-		80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewKeySheetViewModel.swift; sourceTree = "<group>"; };
-		80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyListViewModel.swift; sourceTree = "<group>"; };
 		80230CAD277BF9660026E8E2 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
-		80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		8026B9262904BA7100E1E2A7 /* HankoModules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HankoModules; sourceTree = "<group>"; };
 		804D1552290615B1006065F8 /* Key+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Key+Hashable.swift"; sourceTree = "<group>"; };
 		804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyAlgorithm+CustomStringConvertible.swift"; sourceTree = "<group>"; };
@@ -60,6 +56,10 @@
 		8058D2C4277BF8E80073C812 /* HankoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HankoApp.swift; sourceTree = "<group>"; };
 		8058D2C8277BF8E90073C812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8058D2CD277BF8E90073C812 /* Hanko.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hanko.entitlements; sourceTree = "<group>"; };
+		8099E8DB290D9C0F003C8524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8099E8E2290DBE84003C8524 /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
+		8099E8E4290DBF80003C8524 /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
+		8099E8E6290DC311003C8524 /* KeyListScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyListScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,23 +74,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		80230C8A277BF9650026E8E2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */,
-				80230C8C277BF9650026E8E2 /* KeyListItem.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		80230C8F277BF9650026E8E2 /* Sheets */ = {
-			isa = PBXGroup;
-			children = (
-				80230C90277BF9650026E8E2 /* NewKeySheet.swift */,
-			);
-			path = Sheets;
-			sourceTree = "<group>";
-		};
 		80230C91277BF9650026E8E2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,41 +90,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		80230C97277BF9650026E8E2 /* Panes */ = {
-			isa = PBXGroup;
-			children = (
-				80230C99277BF9650026E8E2 /* Sidebar.swift */,
-				80230C98277BF9650026E8E2 /* KeyList.swift */,
-				80230C9A277BF9650026E8E2 /* KeyDetails.swift */,
-			);
-			path = Panes;
-			sourceTree = "<group>";
-		};
-		80230C9B277BF9650026E8E2 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				80230C9C277BF9650026E8E2 /* KeyDetailsViewModel.swift */,
-				80230C9D277BF9650026E8E2 /* NewKeySheetViewModel.swift */,
-				80230C9E277BF9650026E8E2 /* KeyListViewModel.swift */,
-				80230CCC277C0CAE0026E8E2 /* SidebarViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		80230CAC277BF9660026E8E2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				80230CAD277BF9660026E8E2 /* Shell.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		804D155829061693006065F8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				804D155B290616A3006065F8 /* KeyProperty.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		8058D2B8277BF8E80073C812 = {
@@ -165,17 +119,39 @@
 			isa = PBXGroup;
 			children = (
 				80230C91277BF9650026E8E2 /* Extensions */,
-				804D155829061693006065F8 /* Models */,
-				80230C97277BF9650026E8E2 /* Panes */,
-				80230C8F277BF9650026E8E2 /* Sheets */,
+				8099E8DE290DB81B003C8524 /* Keys */,
+				8099E8DF290DB879003C8524 /* Navigation */,
 				80230CAC277BF9660026E8E2 /* Utilities */,
-				80230C9B277BF9650026E8E2 /* ViewModels */,
-				80230C8A277BF9650026E8E2 /* Views */,
 				8058D2C8277BF8E90073C812 /* Assets.xcassets */,
 				8058D2CD277BF8E90073C812 /* Hanko.entitlements */,
 				8058D2C4277BF8E80073C812 /* HankoApp.swift */,
+				8099E8DB290D9C0F003C8524 /* ContentView.swift */,
 			);
 			path = Hanko;
+			sourceTree = "<group>";
+		};
+		8099E8DE290DB81B003C8524 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				80230C9A277BF9650026E8E2 /* KeyDetails.swift */,
+				80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */,
+				80230C98277BF9650026E8E2 /* KeyList.swift */,
+				8099E8E6290DC311003C8524 /* KeyListScope.swift */,
+				80230C8C277BF9650026E8E2 /* KeyListItem.swift */,
+				804D155B290616A3006065F8 /* KeyProperty.swift */,
+				8099E8E4290DBF80003C8524 /* KeyStore.swift */,
+				80230C90277BF9650026E8E2 /* NewKeySheet.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		8099E8DF290DB879003C8524 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				80230C99277BF9650026E8E2 /* Sidebar.swift */,
+				8099E8E2290DBE84003C8524 /* AppSection.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,24 +228,24 @@
 			files = (
 				80230CB6277BF9660026E8E2 /* String+FormattedIntoGroupsOfFour.swift in Sources */,
 				80230CB7277BF9660026E8E2 /* KeyList.swift in Sources */,
+				8099E8E7290DC311003C8524 /* KeyListScope.swift in Sources */,
 				80230CB4277BF9660026E8E2 /* String+Substrings.swift in Sources */,
-				80230CBB277BF9660026E8E2 /* NewKeySheetViewModel.swift in Sources */,
+				8099E8E3290DBE84003C8524 /* AppSection.swift in Sources */,
 				80230CB1277BF9660026E8E2 /* NewKeySheet.swift in Sources */,
 				804D155729061674006065F8 /* Validity+CustomStringConvertible.swift in Sources */,
+				8099E8E5290DBF80003C8524 /* KeyStore.swift in Sources */,
 				804D1553290615B1006065F8 /* Key+Hashable.swift in Sources */,
 				80230CB3277BF9660026E8E2 /* String+RemovingRegexMatches.swift in Sources */,
 				8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */,
-				80230CBC277BF9660026E8E2 /* KeyListViewModel.swift in Sources */,
-				80230CBA277BF9660026E8E2 /* KeyDetailsViewModel.swift in Sources */,
 				804D155E290616B7006065F8 /* Key+FormattedProperties.swift in Sources */,
 				80230CAF277BF9660026E8E2 /* KeyListItem.swift in Sources */,
 				80230CAE277BF9660026E8E2 /* KeyDetailsRow.swift in Sources */,
 				804D155529061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift in Sources */,
 				80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */,
 				80230CB5277BF9660026E8E2 /* String+Empty.swift in Sources */,
+				8099E8DC290D9C0F003C8524 /* ContentView.swift in Sources */,
 				80230CC9277BF9660026E8E2 /* Shell.swift in Sources */,
 				80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */,
-				80230CCD277C0CAE0026E8E2 /* SidebarViewModel.swift in Sources */,
 				80230CB2277BF9660026E8E2 /* Collection+GroupedIntoSubSequences.swift in Sources */,
 				804D155C290616A3006065F8 /* KeyProperty.swift in Sources */,
 			);
@@ -416,6 +392,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.romsicki.Hanko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +422,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.romsicki.Hanko;
 				PRODUCT_NAME = "$(TARGET_NAME)";

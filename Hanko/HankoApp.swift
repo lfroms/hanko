@@ -11,8 +11,6 @@ import SwiftUI
 
 @main
 struct HankoApp: App {
-    @State var loading = false
-
     init() {
         setenv("PATH", "/opt/homebrew/bin", 1)
 
@@ -22,28 +20,12 @@ struct HankoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                Sidebar()
-                    .toolbar {
-                        ToolbarItem(placement: .navigation) {
-                            Button(action: toggleSidebar) {
-                                Image(systemName: "sidebar.leading")
-                            }
-                        }
-                    }
-
-                KeyList.Placeholder()
-                KeyDetails.Placeholder()
-            }
-        }
-        .commands {
-            SidebarCommands()
+            ContentView()
+                .frame(minWidth: 800, minHeight: 300)
         }
         .windowStyle(.titleBar)
         .windowToolbarStyle(.unified(showsTitle: true))
-    }
-
-    private func toggleSidebar() {
-        NSApp.keyWindow?.firstResponder?.tryToPerform(#selector(NSSplitViewController.toggleSidebar(_:)), with: nil)
+        .defaultSize(width: 1000, height: 550)
+        .defaultPosition(.center)
     }
 }

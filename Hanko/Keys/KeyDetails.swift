@@ -9,10 +9,9 @@ import GPGKit
 import SwiftUI
 
 struct KeyDetails: View {
-    let key: Key
-    let didDelete: () -> Void
+    @EnvironmentObject var keyStore: KeyStore
 
-    @ObservedObject private var viewModel = KeyDetailsViewModel()
+    let key: Key
 
     var body: some View {
         ScrollView {
@@ -64,16 +63,17 @@ struct KeyDetails: View {
             .textSelection(.enabled)
             .padding()
         }
-        .frame(minWidth: 300)
         .toolbar {
-            ToolbarItem(placement: .destructiveAction) {
-                Button(action: didDelete) {
+            ToolbarItem {
+                Button {
+                    keyStore.delete(key: key)
+                } label: {
                     Image(systemName: "trash")
                 }
                 .help("Delete this key")
             }
 
-            ToolbarItem(placement: .automatic) {
+            ToolbarItem {
                 Button(action: {}) {
                     Image(systemName: "square.and.arrow.up")
                 }
@@ -81,6 +81,7 @@ struct KeyDetails: View {
             }
         }
         .navigationTitle(key.uids.first?.name ?? "")
+        .frame(minWidth: 300)
     }
 
     struct Placeholder: View {
@@ -88,7 +89,6 @@ struct KeyDetails: View {
             Text("No Selection")
                 .font(.title2)
                 .foregroundColor(.secondary)
-                .frame(minWidth: 300, maxWidth: 300)
                 .toolbar {
                     ToolbarItem(placement: .destructiveAction) {
                         Button(action: {}) {
@@ -104,6 +104,7 @@ struct KeyDetails: View {
                         .disabled(true)
                     }
                 }
+                .frame(minWidth: 300)
         }
     }
 }

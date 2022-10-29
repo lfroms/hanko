@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct NewKeySheet: View {
+    @EnvironmentObject var keyStore: KeyStore
+
     @Binding var sheetVisible: Bool
 
-    @ObservedObject private var viewModel = NewKeySheetViewModel()
+    @State var name: String = ""
 
     var body: some View {
         VStack {
             Form {
-                TextField("Full Name", text: $viewModel.name)
+                TextField("Full Name", text: $name)
             }
 
             HStack {
@@ -28,7 +30,7 @@ struct NewKeySheet: View {
                 .keyboardShortcut(.cancelAction)
 
                 Button {
-                    viewModel.createKey()
+                    keyStore.create(name: name)
                     sheetVisible = false
                 } label: {
                     Text("Create")

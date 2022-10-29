@@ -5,8 +5,8 @@
 //  Created by Lukas Romsicki on 2021-12-26.
 //
 
-import SwiftUI
 import GPGKit
+import SwiftUI
 
 struct KeyListItem: View {
     let key: Key
