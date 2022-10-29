@@ -13,18 +13,22 @@ struct ContentView: View {
 
     @StateObject var keyStore = KeyStore()
 
+    @State var searchText: String = ""
+
     var body: some View {
         NavigationSplitView(columnVisibility: $splitViewVisibility) {
             Sidebar(activeSection: $activeSection)
                 .navigationSplitViewColumnWidth(min: 200, ideal: 200, max: 250)
         } content: {
             if case let .keys(scope) = activeSection {
-                KeyList(scope: scope)
+                KeyList(scope: scope, searchText: $searchText)
                     .navigationSplitViewColumnWidth(min: 500, ideal: 500)
+                    .navigationTitle(scope.description)
             }
         } detail: {
             KeyDetails.Placeholder()
         }
         .environmentObject(keyStore)
+        .searchable(text: $searchText, placement: .sidebar, prompt: "Search")
     }
 }

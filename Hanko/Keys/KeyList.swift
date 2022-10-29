@@ -5,6 +5,7 @@
 //  Created by Lukas Romsicki on 2021-12-26.
 //
 
+import GPGKit
 import SwiftUI
 
 struct KeyList: View {
@@ -12,9 +13,10 @@ struct KeyList: View {
     @State var newKeySheetVisible: Bool = false
 
     let scope: KeyListScope
+    @Binding var searchText: String
 
     var body: some View {
-        List(keyStore.keys, id: \.self) { key in
+        List(filteredKeys, id: \.fingerprint) { key in
             NavigationLink {
                 KeyDetails(key: key)
                     .id(key.keyListMode)
@@ -78,6 +80,22 @@ struct KeyList: View {
         }
         .task {
             keyStore.loadKeys(scope: scope)
+        }
+    }
+
+    var filteredKeys: [Key] {
+        guard !searchText.isEmpty else {
+            return keyStore.keys
+        }
+
+        return keyStore.keys.filter { key in
+            let uidInfo = key.uids.flatMap { uid in
+                [uid.email, uid.name, uid.comment]
+            }
+
+            let details = ([key.fingerprint] + uidInfo).map { $0.lowercased() }
+
+            return details.contains { $0.contains(searchText.lowercased()) }
         }
     }
 }
