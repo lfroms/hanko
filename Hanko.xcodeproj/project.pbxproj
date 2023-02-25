@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80085062290F322A0094CF99 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80085061290F322A0094CF99 /* FormItem.swift */; };
 		80230CAE277BF9660026E8E2 /* KeyDetailsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */; };
 		80230CAF277BF9660026E8E2 /* KeyListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C8C277BF9650026E8E2 /* KeyListItem.swift */; };
 		80230CB1277BF9660026E8E2 /* NewKeySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C90277BF9650026E8E2 /* NewKeySheet.swift */; };
@@ -19,6 +20,7 @@
 		80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C99277BF9650026E8E2 /* Sidebar.swift */; };
 		80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230C9A277BF9650026E8E2 /* KeyDetails.swift */; };
 		80230CC9277BF9660026E8E2 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80230CAD277BF9660026E8E2 /* Shell.swift */; };
+		8039FB29290EF158007B4E8B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8039FB28290EF158007B4E8B /* ProfileView.swift */; };
 		804D1553290615B1006065F8 /* Key+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D1552290615B1006065F8 /* Key+Hashable.swift */; };
 		804D155529061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */; };
 		804D155729061674006065F8 /* Validity+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804D155629061674006065F8 /* Validity+CustomStringConvertible.swift */; };
@@ -31,9 +33,14 @@
 		8099E8E3290DBE84003C8524 /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8E2290DBE84003C8524 /* AppSection.swift */; };
 		8099E8E5290DBF80003C8524 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8E4290DBF80003C8524 /* KeyStore.swift */; };
 		8099E8E7290DC311003C8524 /* KeyListScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8E6290DC311003C8524 /* KeyListScope.swift */; };
+		8099E8EC290DF7FE003C8524 /* KeyGenerationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8EB290DF7FE003C8524 /* KeyGenerationConfiguration.swift */; };
+		8099E8F1290E0541003C8524 /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8F0290E0541003C8524 /* Curve.swift */; };
+		8099E8F3290E054F003C8524 /* KeyUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8F2290E054F003C8524 /* KeyUsage.swift */; };
+		8099E8F5290E0622003C8524 /* KeyLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099E8F4290E0622003C8524 /* KeyLength.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80085061290F322A0094CF99 /* FormItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 		80230C8B277BF9650026E8E2 /* KeyDetailsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetailsRow.swift; sourceTree = "<group>"; };
 		80230C8C277BF9650026E8E2 /* KeyListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyListItem.swift; sourceTree = "<group>"; };
 		80230C90277BF9650026E8E2 /* NewKeySheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewKeySheet.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		80230C9A277BF9650026E8E2 /* KeyDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyDetails.swift; sourceTree = "<group>"; };
 		80230CAD277BF9660026E8E2 /* Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		8026B9262904BA7100E1E2A7 /* HankoModules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = HankoModules; sourceTree = "<group>"; };
+		8039FB28290EF158007B4E8B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		804D1552290615B1006065F8 /* Key+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Key+Hashable.swift"; sourceTree = "<group>"; };
 		804D155429061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyAlgorithm+CustomStringConvertible.swift"; sourceTree = "<group>"; };
 		804D155629061674006065F8 /* Validity+CustomStringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Validity+CustomStringConvertible.swift"; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		8099E8E2290DBE84003C8524 /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
 		8099E8E4290DBF80003C8524 /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
 		8099E8E6290DC311003C8524 /* KeyListScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyListScope.swift; sourceTree = "<group>"; };
+		8099E8EB290DF7FE003C8524 /* KeyGenerationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyGenerationConfiguration.swift; sourceTree = "<group>"; };
+		8099E8F0290E0541003C8524 /* Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve.swift; sourceTree = "<group>"; };
+		8099E8F2290E054F003C8524 /* KeyUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyUsage.swift; sourceTree = "<group>"; };
+		8099E8F4290E0622003C8524 /* KeyLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyLength.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,18 @@
 			isa = PBXGroup;
 			children = (
 				80230CAD277BF9660026E8E2 /* Shell.swift */,
+				8099E8EB290DF7FE003C8524 /* KeyGenerationConfiguration.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8039FB27290EF149007B4E8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8039FB28290EF158007B4E8B /* ProfileView.swift */,
+				80085061290F322A0094CF99 /* FormItem.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8058D2B8277BF8E80073C812 = {
@@ -120,8 +142,10 @@
 			children = (
 				80230C91277BF9650026E8E2 /* Extensions */,
 				8099E8DE290DB81B003C8524 /* Keys */,
+				8099E8EF290E0526003C8524 /* Models */,
 				8099E8DF290DB879003C8524 /* Navigation */,
 				80230CAC277BF9660026E8E2 /* Utilities */,
+				8039FB27290EF149007B4E8B /* Views */,
 				8058D2C8277BF8E90073C812 /* Assets.xcassets */,
 				8058D2CD277BF8E90073C812 /* Hanko.entitlements */,
 				8058D2C4277BF8E80073C812 /* HankoApp.swift */,
@@ -152,6 +176,16 @@
 				8099E8E2290DBE84003C8524 /* AppSection.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		8099E8EF290E0526003C8524 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8099E8F0290E0541003C8524 /* Curve.swift */,
+				8099E8F2290E054F003C8524 /* KeyUsage.swift */,
+				8099E8F4290E0622003C8524 /* KeyLength.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80085062290F322A0094CF99 /* FormItem.swift in Sources */,
+				8099E8F1290E0541003C8524 /* Curve.swift in Sources */,
+				8039FB29290EF158007B4E8B /* ProfileView.swift in Sources */,
 				80230CB6277BF9660026E8E2 /* String+FormattedIntoGroupsOfFour.swift in Sources */,
 				80230CB7277BF9660026E8E2 /* KeyList.swift in Sources */,
 				8099E8E7290DC311003C8524 /* KeyListScope.swift in Sources */,
@@ -234,6 +271,7 @@
 				80230CB1277BF9660026E8E2 /* NewKeySheet.swift in Sources */,
 				804D155729061674006065F8 /* Validity+CustomStringConvertible.swift in Sources */,
 				8099E8E5290DBF80003C8524 /* KeyStore.swift in Sources */,
+				8099E8F3290E054F003C8524 /* KeyUsage.swift in Sources */,
 				804D1553290615B1006065F8 /* Key+Hashable.swift in Sources */,
 				80230CB3277BF9660026E8E2 /* String+RemovingRegexMatches.swift in Sources */,
 				8058D2C5277BF8E80073C812 /* HankoApp.swift in Sources */,
@@ -241,12 +279,14 @@
 				80230CAF277BF9660026E8E2 /* KeyListItem.swift in Sources */,
 				80230CAE277BF9660026E8E2 /* KeyDetailsRow.swift in Sources */,
 				804D155529061663006065F8 /* KeyAlgorithm+CustomStringConvertible.swift in Sources */,
+				8099E8F5290E0622003C8524 /* KeyLength.swift in Sources */,
 				80230CB8277BF9660026E8E2 /* Sidebar.swift in Sources */,
 				80230CB5277BF9660026E8E2 /* String+Empty.swift in Sources */,
 				8099E8DC290D9C0F003C8524 /* ContentView.swift in Sources */,
 				80230CC9277BF9660026E8E2 /* Shell.swift in Sources */,
 				80230CB9277BF9660026E8E2 /* KeyDetails.swift in Sources */,
 				80230CB2277BF9660026E8E2 /* Collection+GroupedIntoSubSequences.swift in Sources */,
+				8099E8EC290DF7FE003C8524 /* KeyGenerationConfiguration.swift in Sources */,
 				804D155C290616A3006065F8 /* KeyProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

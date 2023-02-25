@@ -10,23 +10,18 @@ import SwiftUI
 
 @MainActor
 final class KeyStore: ObservableObject {
-    @Published var loading: Bool = false
     @Published var keys: [Key] = []
 
     func loadKeys(scope: KeyListScope) {
-        loading = true
+        Task.detached { @MainActor in
+            var keyListModes: [KeyListMode] = []
 
-        var keyListModes: [KeyListMode] = []
+            if scope == .secret {
+                keyListModes.append(.withSecret)
+            }
 
-        if scope == .secret {
-            keyListModes.append(.withSecret)
-        }
-
-        let context = GPGContext(keyListModes: keyListModes)
-        keys = context.keys(secret: scope == .secret)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.loading = false
+            let context = GPGContext(keyListModes: keyListModes)
+            self.keys = context.keys(secret: scope == .secret)
         }
     }
 
@@ -35,9 +30,9 @@ final class KeyStore: ObservableObject {
         context.deleteKey(key: key, allowSecret: true)
     }
 
-    func create(name: String) {
-        let context = GPGContext(protocol: .openPGP, armor: true, offline: true)
+    func create(configuration: KeyGenerationConfiguration) {
+        let context = GPGContext(protocol: .openPGP, armor: false, offline: true)
 
-        context.createKey(userId: name, algorithm: "RSA", expiresOn: Date().addingTimeInterval(10000), flags: [.sign, .certify])
+        context.generateKey(params: configuration.stringRepresentation)
     }
 }

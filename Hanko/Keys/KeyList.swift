@@ -44,12 +44,6 @@ struct KeyList: View {
         }
         .toolbar {
             ToolbarItemGroup {
-                if keyStore.loading {
-                    ProgressView()
-                        .progressViewStyle(.circular)
-                        .scaleEffect(0.5)
-                }
-
                 Button(action: {}) {
                     Image(systemName: "square.and.arrow.down")
                 }
@@ -78,7 +72,7 @@ struct KeyList: View {
         .onChange(of: scope) { newScope in
             keyStore.loadKeys(scope: newScope)
         }
-        .task {
+        .onAppear {
             keyStore.loadKeys(scope: scope)
         }
     }

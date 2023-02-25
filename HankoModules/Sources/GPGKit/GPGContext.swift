@@ -109,7 +109,9 @@ public class GPGContext {
     ///   - params: A string containing the payload to use when generating the key.
     public func generateKey(params: String) {
         let error = gpgme_op_genkey(ctx, params, nil, nil)
+        let message: String = String(cString: gpgme_strerror(error))
         print(gpgme_err_code(error))
+        print(message)
     }
     
     /// Creates a key pair with the given parameters.

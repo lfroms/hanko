@@ -16,32 +16,30 @@ struct KeyDetails: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
-                VStack(spacing: 2) {
-                    VStack(spacing: 16) {
-                        Circle()
-                            .foregroundColor(.gray)
-                            .frame(width: 96, height: 96)
+                if let primaryUid = key.uids.first {
+                    VStack(spacing: 2) {
+                        VStack(spacing: 16) {
+                            ProfileView(name: primaryUid.name, size: .large)
 
-                        Text(key.uids.first?.name ?? "")
-                            .font(.title)
-                            .fontWeight(.bold)
-                    }
+                            Text(primaryUid.name)
+                                .font(.title)
+                                .fontWeight(.bold)
+                        }
 
-                    if !(key.uids.first?.name.isEmpty ?? false) {
-                        Text(key.uids.first?.email ?? "")
+                        Text(primaryUid.email)
                             .font(.headline)
                             .fontWeight(.medium)
                             .foregroundColor(.secondary)
-                    }
 
-                    if !(key.uids.first?.comment.isEmpty ?? false) {
-                        Text(key.uids.first?.comment ?? "")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                            .padding(.top, 8)
+                        if !primaryUid.comment.isEmpty {
+                            Text(primaryUid.comment)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                                .padding(.top, 8)
+                        }
                     }
+                    .frame(maxWidth: .infinity)
                 }
-                .frame(maxWidth: .infinity)
 
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Information")
@@ -57,11 +55,81 @@ struct KeyDetails: View {
                         }
                     }
                 }
-
-                Spacer()
             }
             .textSelection(.enabled)
             .padding()
+
+            Form {
+                Section {
+                    Picker(selection: .constant("Ultimate")) {
+                        Text("Ultimate")
+                            .tag("Ultimate")
+                    } label: {
+                        Text("Owner Trust")
+                    }
+
+                    Toggle("Enabled", isOn: .constant(true))
+                }
+
+                Section {
+                    ForEach(Array(key.uids.dropFirst()), id: \.id) { uid in
+                        NavigationLink {
+                            Text("Hello")
+                        } label: {
+                            HStack {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .foregroundStyle(.linearGradient(colors: [.init(white: 0.75), .init(white: 0.5)], startPoint: .top, endPoint: .bottom))
+                                    .frame(width: 20, height: 20)
+                                    .overlay {
+                                        Image(systemName: "person.crop.circle")
+                                    }
+
+                                Text(uid.comment)
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Identities")
+                    Text("An identity associates a name and email address with the key.")
+                } footer: {
+                    Button("Add Identity…") {}
+                }
+
+                Section {
+                    ForEach(key.subkeys, id: \.fingerprint) { subkey in
+                        NavigationLink {
+                            Text("Hello")
+                                .toolbar {
+                                    ToolbarItem {
+                                        NavigationLink {
+                                            Self(key: key)
+                                        } label: {
+                                            Image(systemName: "chevron.left")
+                                        }
+                                    }
+                                }
+                        } label: {
+                            HStack {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .foregroundStyle(.linearGradient(colors: [.blue, .blue], startPoint: .top, endPoint: .bottom))
+                                    .frame(width: 20, height: 20)
+                                    .overlay {
+                                        Image(systemName: "key.fill")
+                                    }
+
+                                Text("\(subkey.algorithm.description) (\(subkey.length) bit)")
+                            }
+                        }
+                    }
+                } header: {
+                    Text("Subkeys")
+                    Text("Subkeys are derived and can be revoked independently from the primary key, making them more convenient to distribute widely.")
+                } footer: {
+                    Button("Add Subkey…") {}
+                }
+            }
+            .formStyle(.grouped)
+            .padding(-6)
         }
         .toolbar {
             ToolbarItem {
@@ -80,10 +148,11 @@ struct KeyDetails: View {
                 .help("Export this key")
             }
         }
-        .navigationTitle(key.uids.first?.name ?? "")
         .frame(minWidth: 300)
     }
+}
 
+extension KeyDetails {
     struct Placeholder: View {
         var body: some View {
             Text("No Selection")
